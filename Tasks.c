@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int number,choice;
+    int number,choice,a,i,table;
     printf("Enter number:\n");
     scanf("%d",&number);
     printf("Enter choice:\n\t1 to check even/odd\n\t2 to check prime\n\t3 to print all numbers till n\n\t4 to print table\n\t5 to print all even and odd numbers separatly\n\t6 to print sum of all numbers till n\n\t7 to print all prime numbers till n\n\t8 to print fibonacci/tribonacci series till n separtely\n\t9 to print all composite no. till n\n\n>>");
@@ -15,6 +15,12 @@ int main()
         case 3:
             break;
         case 4:
+        printf("The table of %d is:\n",number);
+            for(i=1;i<=10;i++)
+            {
+                table=number*i;
+                printf("%d * %d = %d\n",number,i,table);
+            }
             break;
         case 5:
             break;
