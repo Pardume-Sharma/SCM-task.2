@@ -59,6 +59,7 @@ int main()
             
             printf("Enter choice of pattern\na\tb\tc\td\n");
             scanf("%s",&a);
+            printf("Pattern is:\n");
             if(a=='a'){
                 for(i=1;i<=number;i++)
                 {
@@ -81,12 +82,13 @@ int main()
                         printf("\n");
                     }
                 }
-                
-            
             break;
         default:
             printf("Invalid choice");
         return 0;
     }
 }
+            
+            
+                
             
