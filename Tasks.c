@@ -48,6 +48,12 @@ int main()
             }
             break;
         case 6:
+            printf("Sum of all natural number till %d is:\n",number);
+            for(i=1;i<=number;i++)
+            {
+                sum=sum+i;
+            }
+            printf("%d",sum);
             break;
         case 7:
             break;
