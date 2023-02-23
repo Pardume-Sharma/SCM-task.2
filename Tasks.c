@@ -31,6 +31,8 @@ int main()
             }
             break;
         case 3:
+            for(int i=1;i<=number;i++){
+        printf("%d ",i);}
             break;
         case 4:
         printf("The table of %d is:\n",number);
