@@ -11,6 +11,11 @@ int main()
     switch(choice)
     {
         case 1:
+            if(number%2==0){
+                printf("even number");}
+            else{
+                printf("odd number");}
+            }
             break;
         case 2:
             int flag = 0;
