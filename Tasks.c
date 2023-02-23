@@ -43,6 +43,16 @@ int main()
         case 8:
             break;
         case 9:
+            printf("Composite Numbers: ");
+            for(int i = 2;i <= number;i++){
+                composite = 0;
+                for(int j = i-1; j > 1 ; j--){
+                    if(i%j == 0){}
+                    composite = 1;
+                }
+                if(composite == 1)
+                    printf("%d ", i);
+                }
             break;
         default:
             printf("Invalid choice");
