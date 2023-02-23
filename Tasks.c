@@ -1,41 +1,21 @@
 #include<stdio.h>
-
 int main()
 {
-    int number,choice,i,j,table,sum=0,k=65;
-    char a;
+    int number,choice,a,i,table,composite=0;
     printf("Enter number:\n");
     scanf("%d",&number);
-    printf("Enter choice:\n\t1 to check even/odd\n\t2 to check prime\n\t3 to print all numbers till n\n\t4 to print table\n\t5 to print all even and odd numbers separatly\n\t6 to print sum of all numbers till n\n\t7 to print all prime numbers till n\n\t8 to print fibonacci/tribonacci series till n separtely\n\t9 to print all composite no. till n\n\t10 to print character patterns\n\n");
+    printf("Enter choice:\n\t1 to check even/odd\n\t2 to check prime\n\t3 to print all numbers till n\n\t4 to print table\n\t5 to print all even and odd numbers separatly\n\t6 to print sum of all numbers till n\n\t7 to print all prime numbers till n\n\t8 to print fibonacci/tribonacci series till n separtely\n\t9 to print all composite no. till n\n\n>>");
     scanf("%d",&choice);
     switch(choice)
     {
         case 1:
-            if(number%2==0){
-                printf("even number");}
-            else{
-                printf("odd number");}
-            }
             break;
         case 2:
-            int flag = 0;
-            for(int i=2 ; i < number/2 ; i++) {
-                if(number%i == 0) {
-                printf("%d is not a prime number", number);
-                     flag = 1;
-                     break;
-                }
-             }
-             if(flag == 0) {
-                 printf("%d is a prime number", number);
-            }
             break;
         case 3:
-            for(int i=1;i<=number;i++){
-        printf("%d ",i);}
             break;
         case 4:
-        printf("The table of %d is:\n",number);
+            printf("The table of %d is:\n",number);
             for(i=1;i<=10;i++)
             {
                 table=number*i;
@@ -43,68 +23,29 @@ int main()
             }
             break;
         case 5:
-            printf("Even numbers till %d are:\n",number);
-            for(i=1;i<=number;i++)
-            {
-                if(i%2==0)
-                {
-                    printf("%d\n",i);
-                }
-                else{
-                    printf("");
-                }
-            }
-            printf("Odd numbers till %d are:\n",number);
-            for(i=1;i<=number;i++)
-            {
-                if(i%2!=0)
-                {
-                    printf("%d\n",i);
-                }
-                else{
-                    printf("");
-                }
-            }
             break;
         case 6:
             break;
         case 7:
+            printf("Prime Numbers till %d");
+            for(int i=3;i<=number;i++){
+		        int flag=0;
+		        for(int j=2;j<i;j++){
+			        if(i%j == 0){
+				    flag = 1;
+				    break;
+			    }
+		    }  
+            if(flag==0){
+                printf("%d ",i);}
+            }
             break;
         case 8:
             break;
         case 9:
-            break;
-        case 10:
-            printf("Enter choice of pattern\na\tb\tc\td\n");
-            scanf("%s",&a);
-            if(a=='a'){
-                for(i=1;i<=number;i++)
-                {
-                    for(j=1;j<=i;j++)
-                    {
-                        printf("%c ",k);
-                        k++;
-                    }
-                    printf("\n");
-                }
-            }
-            else if(a='b')
-                {
-                    for(i=1;i<=number;i++)
-                    {
-                        for(j=1;j<=i;j++)
-                        {
-                            printf("%c ",j+64);
-                        }
-                        printf("\n");
-                    }
-                }
-                
-            
             break;
         default:
             printf("Invalid choice");
         return 0;
     }
 }
-            
