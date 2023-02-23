@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int main()
 {
     int number,choice,i,j,table,sum=0,k=65;
@@ -56,7 +57,6 @@ int main()
         case 9:
             break;
         case 10:
-            
             printf("Enter choice of pattern\na\tb\tc\td\n");
             scanf("%s",&a);
             if(a=='a'){
