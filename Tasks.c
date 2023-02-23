@@ -13,6 +13,17 @@ int main()
         case 1:
             break;
         case 2:
+            int flag = 0;
+            for(int i=2 ; i < number/2 ; i++) {
+                if(number%i == 0) {
+                printf("%d is not a prime number", number);
+                     flag = 1;
+                     break;
+                }
+             }
+             if(flag == 0) {
+                 printf("%d is a prime number", number);
+            }
             break;
         case 3:
             break;
