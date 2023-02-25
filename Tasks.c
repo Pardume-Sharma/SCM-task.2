@@ -56,6 +56,6 @@ int main()
             break;
         default:
             printf("Invalid choice");
-        return 0;
     }
+	return 0;
 }
