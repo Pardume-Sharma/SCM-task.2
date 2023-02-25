@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int main()
 {
     int number,choice,a,i,table,composite=0;
