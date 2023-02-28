@@ -50,6 +50,7 @@ int main()
         case 8:
             break;
         case 9:
+<<<<<<< HEAD
             break;
         case 10:
             
@@ -65,12 +66,14 @@ int main()
                         k++;
                     }
                     printf("\n");
+=======
             printf("Composite Numbers: ");
             for(int i = 2;i <= number;i++){
                 composite = 0;
                 for(int j = i-1; j > 1 ; j--){
                     if(i%j == 0){}
-                    composite = 1
+                    composite = 1;
+>>>>>>> e4f1f77a8ff0cb0111fd97569fbc66ff4ea9e667
                 }
                 if(composite == 1)
                     printf("%d ", i);
@@ -81,7 +84,7 @@ int main()
     }
 	return 0;
 }
-
+<<<<<<< HEAD
             
             
                 

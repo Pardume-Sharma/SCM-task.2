@@ -26,12 +26,6 @@ int main()
         case 5:
             break;
         case 6:
-            printf("Sum of all natural number till %d is:\n",number);
-            for(i=1;i<=number;i++)
-            {
-                sum=sum+i;
-            }
-            printf("%d",sum);
             break;
         case 7:
             printf("Prime Numbers till %d");
@@ -50,27 +44,12 @@ int main()
         case 8:
             break;
         case 9:
-            break;
-        case 10:
-            
-            printf("Enter choice of pattern\na\tb\tc\td\n");
-            scanf("%s",&a);
-            printf("Pattern is:\n");
-            if(a=='a'){
-                for(i=1;i<=number;i++)
-                {
-                    for(j=1;j<=i;j++)
-                    {
-                        printf("%c ",k);
-                        k++;
-                    }
-                    printf("\n");
             printf("Composite Numbers: ");
             for(int i = 2;i <= number;i++){
                 composite = 0;
                 for(int j = i-1; j > 1 ; j--){
                     if(i%j == 0){}
-                    composite = 1
+                    composite = 1;
                 }
                 if(composite == 1)
                     printf("%d ", i);
@@ -81,10 +60,3 @@ int main()
     }
 	return 0;
 }
-
-            
-            
-                
-            
-=======
->>>>>>> e4f1f77a8ff0cb0111fd97569fbc66ff4ea9e667
