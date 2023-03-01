@@ -76,6 +76,9 @@ int main()
                     printf("%d ", i);
                 }
             break;
+	case 11:
+		printf("Mirror Pattern Printing");
+		break;		
         default:
             printf("Invalid choice");
     }
