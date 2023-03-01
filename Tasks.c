@@ -84,10 +84,3 @@ int main()
     }
 	return 0;
 }
-
-            
-            
-                
-            
-=======
->>>>>>> e4f1f77a8ff0cb0111fd97569fbc66ff4ea9e667
