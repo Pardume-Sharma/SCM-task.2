@@ -76,6 +76,9 @@ int main()
                     printf("%d ", i);
                 }
             break;
+	case 11:
+		printf("Factorial Tree Printing");
+		break;	
         default:
             printf("Invalid choice");
     }
